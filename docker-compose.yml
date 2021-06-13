@@ -8,7 +8,7 @@ services:
       MYSQL_DATABASE: moodle
       MYSQL_USER: moodle
       MYSQL_PASSWORD: @Ndre2409000
-    volumes:
+      volumes:
       - $HOME/volumes/mysql:/var/lib/mysql
 
   moodle:
