@@ -9,7 +9,7 @@ services:
       MYSQL_USER: moodle
       MYSQL_PASSWORD: ANdre24090
       volumes:
-      - "$HOME/volumes/mysql:/var/lib/mysql"
+      - '$HOME/volumes/mysql:/var/lib/mysql'
 
   moodle:
     image: 'bitnami/moodle:3'
@@ -28,7 +28,7 @@ services:
       - '80:80'
       - '443:443'
     volumes:
-      - "$HOME/volumes/moodle:/bitnami"
+      - '$HOME/volumes/moodle:/bitnami'
     depends_on:
       - mariadb
 
