@@ -9,7 +9,7 @@ services:
       MYSQL_USER: moodle
       MYSQL_PASSWORD: ANdre24090
       volumes:
-      - mysql:/var/lib/mysql
+      - '$HOME/volumes/mysql:/var/lib/mysql'
 
   moodle:
     image: 'bitnami/moodle:3'
